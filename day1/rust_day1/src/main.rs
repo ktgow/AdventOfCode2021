@@ -9,7 +9,6 @@ fn main() {
 	let mut last_value = i32::from_str(&first_line).unwrap();
 	let mut num_increases = 0;
 
-        // Consumes the iterator, returns an (Optional) String
         for line in lines {
             if let Ok(ip) = line {
 		let value = i32::from_str(&ip).unwrap();
