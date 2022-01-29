@@ -4,7 +4,6 @@ use std::path::Path;
 use std::str::FromStr;
 
 fn main() {
-    // File hosts must exist in current path before this produces output
     if let Ok(mut lines) = read_lines("../input.txt") {
 	let first_line = lines.next().unwrap().unwrap();
 	let mut last_value = i32::from_str(&first_line).unwrap();
