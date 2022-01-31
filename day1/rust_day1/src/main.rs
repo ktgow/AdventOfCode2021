@@ -4,7 +4,7 @@ use std::path::Path;
 use std::str::FromStr;
 
 fn main() {
-    if let Ok(mut lines) = read_lines("../input.txt") {
+    if let Ok(mut lines) = read_lines("../input2.txt") {
 	let first_line = lines.next().unwrap().unwrap();
 	let mut last_value = i32::from_str(&first_line).unwrap();
 	let mut num_increases = 0;

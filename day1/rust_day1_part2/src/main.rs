@@ -5,7 +5,7 @@ use std::str::FromStr;
 
 fn main() {
     // File hosts must exist in current path before this produces output
-    if let Ok(mut lines) = read_lines("../input.txt") {
+    if let Ok(mut lines) = read_lines("../input2.txt") {
 	let mut window: Vec<i32> = Vec::new();
 	for _i in 1..4 {
 	    let line = lines.next().unwrap().unwrap();
